@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(248, 255, 248);
+    background-image: url("./assets/dna1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+code {
+    color: black;
+}
+.instructions {
+    width: 600px;
+    padding: 10px 25px 10px 25px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: white;
+    outline: 1px solid darkslategrey;
+}
+.sequence-input {
+    width: 600px;
+    padding: 4px;
+    font-size: 14px;
+    font-family:'Courier New', Courier, monospace;
+    border: 1px solid darkslategrey;
+}
+.search-button {
+    width: 25%;
+    height: 30px;
+    font-size: 14px;
+    font-family:'Courier New', Courier, monospace;
+    float: right;
+    cursor: pointer;
+    background-color: white; 
+    border: 1px solid  darkslategray;
+    /* filter: drop-shadow(1px 1px lightgrey); */
+}
+.search-button:hover {
+    background-color: lightgray;
+    box-shadow: 4px 4px 4px lightgrey;
+}
+.reload-button {
+    width: 25%;
+    height: 30px;
+    font-size: 14px;
+    font-family:'Courier New', Courier, monospace;
+    float: right;
+    cursor: pointer;
+    background-color: white; 
+    border: 1px solid  darkslategray;
+    display: none;
+}
+.reload-button:hover {
+    background-color: lightgray;
+    box-shadow: 4px 4px 4px lightgrey;
+}
+.results {
+    width: 600px; 
+    padding: 4px;
+    font-size: 14px;
+    font-family:'Courier New', Courier, monospace;
+    background-color: white;
+    border: 1px solid darkslategrey;
+    display: none;
+    overflow: hidden;
+    white-space: pre-wrap;
+}

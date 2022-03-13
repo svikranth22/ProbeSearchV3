@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="./index.css"> 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+    <script src="./index.js"></script>
+    <!-- <script src="../app.js"></script> -->
+    <title></title>
+</head>
+
+<body id="body">
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <main id="main">
+            <p class="instructions">input a read and search the <code>717v5</code> database with the <code>bowtie2</code> aligner</p> 
+            <form onsubmit="runAlignment(event.preventDefault())" style="width: 600px">
+                <textarea id="sequence_input" class="sequence-input" rows="6" placeholder="ATTCCAAGGGTTCTGCCAATTTAAGC"></textarea> 
+                <br> <br>
+                <button id="search_button" type="submit" class="search-button">search</button>
+                <button id="reload_button" class="reload-button" onclick="reload()">search again</button>
+            </form> 
+            <hr>
+            <div id="results" class="results"> <!-- initally hidden -> populates with alignment results --></div>
+            <hr>
+        </main>
+    </div>
+</body>
