@@ -7,19 +7,18 @@ async function runAlignment() {
     const payload = {
         sequence: sequence.value
     };
-    const res = await axios.put('/', payload);                      // call bowtie alignment
+    const res = await axios.put('/', payload);                       // call bowtie alignment
 
     search_button.style.display = "none";
     reload_button.style.display = "block";
 
-    resdiv.classList.add('animate__animated','animate__fadeInUp');  // create visualization div and show 
+    resdiv.classList.add('animate__animated','animate__fadeInUp');   // create visualization div and show 
     resdiv.style.display = "block";
     resdiv.innerHTML = res.data;
     
     setTimeout(() => {
         resdiv.classList.remove('animate__fadeInUp');
     }, 1000);
-    
     
 } // runAlignment
 
